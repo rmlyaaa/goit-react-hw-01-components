@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-  width: 300px;
+  width: 330px;
   margin: 0 auto;
   padding: 10px;
   margin-top: 30px;
@@ -12,7 +12,7 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   background-color: white;
-  width: 280px;
+  width: 300px;
 `;
 
 export const Wrapper = styled.div`
