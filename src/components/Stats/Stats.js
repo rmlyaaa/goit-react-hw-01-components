@@ -1,5 +1,35 @@
-import {} from './Stats.styled';
+import {
+  Item,
+  Label,
+  List,
+  Percentage,
+  Statictic,
+  Title,
+} from './Stats.styled';
 
-export const Stats = () => {
-  return;
+export const Stats = ({ title, stats }) => {
+  return (
+    <Statictic>
+      {title != null && <Title>{title}</Title>}
+
+      <List>
+        {stats.map(({ id, label, percentage }) => (
+          <Item key={id} style={{ backgroundColor: randomColor() }}>
+            <Label>{label}</Label>
+            <Percentage>{percentage}%</Percentage>
+          </Item>
+        ))}
+      </List>
+    </Statictic>
+  );
+};
+
+const randomColor = () => {
+  return (
+    '#' +
+    Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, '0')
+      .toUpperCase()
+  );
 };
