@@ -13,7 +13,6 @@ export const List = styled.ul`
 export const Item = styled.li`
   background-color: white;
   width: 280px;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
 `;
 
 export const Wrapper = styled.div`
