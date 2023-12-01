@@ -2,7 +2,7 @@ import user from '../user.json';
 import data from '../data.json';
 import { Profile } from './Profile/Profile.js';
 import { GlobalStyle } from './GlobalStyle';
-import { Stats } from './Stats/Stats';
+import { Stats } from './Stats/Stats.js';
 
 export const App = () => {
   return (
