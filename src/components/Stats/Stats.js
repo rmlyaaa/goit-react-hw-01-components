@@ -1,11 +1,1 @@
-import {
-
-} from './Profile.styled';
-
-export const Profile = ({
-
-}) => {
-  return (
-    
-  );
-};
+import {} from './Stats.styled';
